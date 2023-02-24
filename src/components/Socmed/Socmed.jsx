@@ -9,19 +9,19 @@ const Socmed = () => {
     <>
         <div>
             <ul className="wrapper">
-                <a href="/" target={'_blank'}>
+                <a href="www.facebook.com/gerald.ase" target={'_blank'}>
                     <li className="icon facebook">
                         <span className='tooltip'>Facebook</span>
                         <span><FaFacebookF/></span>
                     </li>
                 </a>
-                <a href="/" target={'_blank'}>
-                    <li className="icon youtube">
+                <a href="www.linkedin.com/in/gerald-ramirez" target={'_blank'}>
+                    <li className="icon linkedin">
                         <span className='tooltip'>LinkedIn</span>
                         <span><FaLinkedinIn/></span>
                     </li>
                 </a>
-                <a href="/" target={'_blank'}>
+                <a href="github.com/RamirezGR" target={'_blank'}>
                     <li className="icon github">
                         <span className='tooltip'>Github</span>
                         <span><FiGithub/></span>

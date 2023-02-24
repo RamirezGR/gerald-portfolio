@@ -88,9 +88,9 @@
     background: #1877f2;
     color: #fff;
 }
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before{
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before{
     background: #941707;
     color: #fff;
 }
