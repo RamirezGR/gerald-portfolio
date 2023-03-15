@@ -1,10 +1,39 @@
 import React from 'react'
 import Button from './Button/Button'
 import { Link } from 'react-router-dom'
-import TextError from './Error/TextError'
    
 
 const Experience = () => {
+  const projects =[
+    {
+      id: 1,
+      name: "My Portfolio",
+      imageUrl: "/images/Project.png",
+      details: "Built this using HTML, CSS, JAVASCRIPT and REACT JS",
+      url:"https://geraldrportfolio.netlify.app/"
+    },
+    {
+      id: 2,
+      name: "Soft Wishbone",
+      imageUrl: "/images/Project3.png",
+      details: "Built this using HTML, CSS, JAVASCRIPT and REACT JS",
+      url:"https://softwishbone.netlify.app/"
+    }
+  ]
+  const projectCard = projects.map(project => {
+    return (
+      <div className="my-project">
+        <img src={project.imageUrl} alt="" />
+        <div className='project-desc'>
+          <h3>{project.name}</h3>
+          <p>{project.details}</p>
+          <a href={project.url} target='_blank'>
+            <Button title="view"/>
+          </a>
+        </div>
+      </div>
+      )
+  })
 
   return (
     <div className="experience">
@@ -36,24 +65,7 @@ const Experience = () => {
       <div className="projects-container">
         <h1 className='title'>PROJECTS</h1>
         <div className="project-flex">
-          <div className="my-project">
-            <img src="/images/Project.png" alt="" />
-            <div className='project-desc'>
-              <h3>PORTFOLIO WEBSITE</h3>
-              <p>Built this using HTML, CSS, JAVASCRIPT and REACT JS</p>
-              <Link to='/'>
-                <Button title="View" className='view-btn'/>
-              </Link>
-            </div>
-          </div>
-          <div className="my-project">
-            <img src="/images/Project2.png" alt="" />
-            <div className='project-desc'>
-              <h3>SWIFT RENAISSANCE GLOBAL</h3>
-              <p>Built this using HTML, CSS, JAVASCRIPT and REACT JS</p>
-              <TextError name="ERROR!"/>
-            </div>
-          </div>
+          {projectCard}
         </div>
       </div>
     </div>
