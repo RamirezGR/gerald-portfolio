@@ -5,7 +5,6 @@ import {
 import About from "./components/About";
 import Home from "./components/Home"
 import Navbar from "./components/Navbar/Navbar";
-import Socmed from "./components/Socmed/Socmed";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 
@@ -14,7 +13,6 @@ function AppLayout() {
   return (
      <>
       <Navbar />
-      <Socmed/>
       <Outlet />
     </>
   );
